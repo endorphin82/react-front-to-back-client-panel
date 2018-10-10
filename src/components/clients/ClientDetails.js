@@ -159,7 +159,8 @@ export default compose(
   firestoreConnect(props => [
     {
       collection: 'clients',
-      storeAs: 'client', doc: props.match.params.id
+      storeAs: 'client',
+      doc: props.match.params.id
     }
   ]),
   connect(({firestore: {ordered}}, props) => ({
