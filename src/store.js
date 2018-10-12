@@ -52,12 +52,12 @@ if (localStorage.getItem('settings') == null) {
   };
 
   // Set to localStorage
-  // localStorage.setItem('settings', JSON.stringify(defaultSettings));
+  localStorage.setItem('settings', JSON.stringify(defaultSettings));
 }
 
 // Create initial state
-// const initialState = { settings: JSON.parse(localStorage.getItem('settings')) };
-const initialState = {};
+const initialState = { settings: JSON.parse(localStorage.getItem('settings')) };
+// const initialState = {};
 
 // Create store
 const store = createStoreWithFirebase(
