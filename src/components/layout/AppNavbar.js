@@ -87,7 +87,7 @@ class AppNavbar extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/registration" className="nav-link">
+                  <Link to="/register" className="nav-link">
                     Register
                   </Link>
                 </li>
