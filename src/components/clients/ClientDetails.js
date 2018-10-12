@@ -56,6 +56,7 @@ class ClientDetails extends Component {
               placeholder="Add New Balance"
               value={balanceUpdateAmount}
               onChange={this.onChange}
+              disabled={this.props.settings.disableBalanceOnEdit}
             />
             <div className="input-group-append">
               <input
@@ -152,7 +153,8 @@ class ClientDetails extends Component {
 }
 
 ClientDetails.propTypes = {
-  firestore: PropTypes.object.isRequired
+  firestore: PropTypes.object.isRequired,
+  settings: PropTypes.object.isRequired
 };
 
 export default compose(
@@ -163,7 +165,8 @@ export default compose(
       doc: props.match.params.id
     }
   ]),
-  connect(({firestore: {ordered}}, props) => ({
-    client: ordered.client && ordered.client[0]
+  connect(({firestore: {ordered}, settings }, props) => ({
+    client: ordered.client && ordered.client[0],
+    settings
   }))
 )(ClientDetails);
