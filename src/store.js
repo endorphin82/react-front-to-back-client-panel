@@ -8,12 +8,12 @@ import notifyReducer from './reducers/notifyReducer';
 import settingsReducer from './reducers/settingsReducer';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCHvBjkoyK-uHhgesSKvaQpvNeDdkxz8mc",
-  authDomain: "reactclientpanel-244bc.firebaseapp.com",
-  databaseURL: "https://reactclientpanel-244bc.firebaseio.com",
-  projectId: "reactclientpanel-244bc",
-  storageBucket: "reactclientpanel-244bc.appspot.com",
-  messagingSenderId: "423726150706"
+    apiKey: "AIzaSyCHvBjkoyK-uHhgesSKvaQpvNeDdkxz8mc",
+    authDomain: "reactclientpanel-244bc.firebaseapp.com",
+    databaseURL: "https://reactclientpanel-244bc.firebaseio.com",
+    projectId: "reactclientpanel-244bc",
+    storageBucket: "reactclientpanel-244bc.appspot.com",
+    messagingSenderId: "423726150706"
 };
 
 // react-redux-firebase config
@@ -48,7 +48,7 @@ if (localStorage.getItem('settings') == null) {
   const defaultSettings = {
     disableBalanceOnAdd: true,
     disableBalanceOnEdit: false,
-    allowRegistration: false
+    allowRegistration: true
   };
 
   // Set to localStorage
@@ -57,7 +57,6 @@ if (localStorage.getItem('settings') == null) {
 
 // Create initial state
 const initialState = { settings: JSON.parse(localStorage.getItem('settings')) };
-// const initialState = {};
 
 // Create store
 const store = createStoreWithFirebase(
