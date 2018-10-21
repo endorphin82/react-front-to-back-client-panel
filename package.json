@@ -1,5 +1,5 @@
 {
-  "name": "react_fb_clientpanel",
+  "name": "clientpanel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/endorphin82/react-front-to-back-client-panel/issues"
   },
-  "homepage": "https://github.com/endorphin82/react-front-to-back-client-panel#readme",
+  "homepage": ".",
   "browserslist": [
     ">0.2%",
     "not dead",
