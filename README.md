@@ -1,4 +1,7 @@
-DEMO: https://client-babff.firebaseapp.com/
+DEMO: https://client3-aa36b.firebaseapp.com/
+
+user: brad@gmail.com
+password: 123123
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
